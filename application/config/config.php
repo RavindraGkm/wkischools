@@ -17,7 +17,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | environments.
 |
 */
+<<<<<<< HEAD
 $config['base_url'] = 'http://localhost/wkischool/'; //<<== for localhost
+=======
+$config['base_url'] = 'http://localhost/wkischools/'; //<<== for localhost
+>>>>>>> 2d2229a3184a632108c46a3b4646ece66fa7c066
 //$config['base_url'] = 'http://www.webkreators.in'; //<<--- for server
 
 /*

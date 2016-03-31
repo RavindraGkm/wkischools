@@ -25,7 +25,11 @@ class Admin extends REST_Controller {
             else {
                 $params = $this->post();
                 $this->load->database();
+<<<<<<< HEAD
                 $this->load->model('admin_mng/Admin_model');
+=======
+                $this->load->model('admin/Admin_model');
+>>>>>>> 2d2229a3184a632108c46a3b4646ece66fa7c066
                 $response = $this->Admin_model->add_new_category_language($params,$headers['Authorization']);
                 if($response['status']=='success') {
                     $this->response($response,REST_Controller::HTTP_OK);
@@ -65,7 +69,11 @@ class Admin extends REST_Controller {
             else {
                 $params = $this->put();
                 $this->load->database();
+<<<<<<< HEAD
                 $this->load->model('admin_mng/Admin_model');
+=======
+                $this->load->model('admin/Admin_model');
+>>>>>>> 2d2229a3184a632108c46a3b4646ece66fa7c066
                 $response = $this->Admin_model->ebook_approvel($headers['Authorization'],$params,$id);
                 if($response['status']=='success') {
                     $this->response($response,REST_Controller::HTTP_OK);
@@ -74,7 +82,11 @@ class Admin extends REST_Controller {
                     $this->response($response,REST_Controller::HTTP_INTERNAL_SERVER_ERROR);
                 }
 
+<<<<<<< HEAD
                 $this->load->model('admin_mng/Admin_model');
+=======
+                $this->load->model('admin/Admin_model');
+>>>>>>> 2d2229a3184a632108c46a3b4646ece66fa7c066
                 $response = $this->Admin_model->composition_approvel($headers['Authorization'],$params,$id);
                 if($response['status']=='success') {
                     $this->response($response,REST_Controller::HTTP_OK);
@@ -97,7 +109,11 @@ class Admin extends REST_Controller {
         }
         else {
             $this->load->database();
+<<<<<<< HEAD
             $this->load->model('admin_mng/Admin_model');
+=======
+            $this->load->model('admin/Admin_model');
+>>>>>>> 2d2229a3184a632108c46a3b4646ece66fa7c066
             if ($id != 0 && $id > -1) {
                 $response = $this->Admin_model->delete_event($headers['Authorization'], $id);
             }

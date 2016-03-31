@@ -1,5 +1,9 @@
 RewriteEngine on
+<<<<<<< HEAD
 RewriteBase /wkischool
+=======
+RewriteBase /wkischools
+>>>>>>> 2d2229a3184a632108c46a3b4646ece66fa7c066
 #RewriteBase /clients/school
 #RewriteBase /
 RewriteCond %{HTTP:Authorization} ^(.*)

@@ -51,7 +51,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'Index_controller';
 $route['404_override'] = '';
-<<<<<<< HEAD
 $route['manage-school'] = "School_manage_controller";
 $route['manage-admin-account'] = "Manage_admin_controller";
 $route['manage-subject-class'] = "Manage_sub_class_controller";
@@ -60,11 +59,6 @@ $route['manage-csc'] = "CSC_manage_controller";
 
 $route['admin-mng-book-mng'] = "Admin_controller";
 $route['admin_mng/([0-9]+)'] = "admin_mng/index/$1";
-=======
-$route['manage-school'] = "MngSchool_controller";
-$route['admin-book-mng'] = "Admin_controller";
-$route['admin/([0-9]+)'] = "admin/index/$1";
->>>>>>> 2d2229a3184a632108c46a3b4646ece66fa7c066
 $route['ebook/([0-9]+)'] = "ebook/index/$1";
 $route['event/([0-9]+)'] = "event/index/$1";
 $route['showcase/([0-9]+)'] = "showcase/index/$1";

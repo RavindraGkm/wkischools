@@ -141,11 +141,7 @@ $config['auth_source'] = 'ldap';
 | For digest authentication the library function should return already a stored
 | md5(username:restrealm:password) for that username
 |
-<<<<<<< HEAD
 | e.g: md5('admin_mng:REST API:1234') = '1e957ebc35631ab22d5bd6526bd14ea2'
-=======
-| e.g: md5('admin:REST API:1234') = '1e957ebc35631ab22d5bd6526bd14ea2'
->>>>>>> 2d2229a3184a632108c46a3b4646ece66fa7c066
 |
 */
 $config['auth_library_class'] = '';
@@ -203,11 +199,7 @@ $config['auth_library_function'] = '';
 | Array of usernames and passwords for login, if ldap is configured this is ignored
 |
 */
-<<<<<<< HEAD
 $config['rest_valid_logins'] = ['admin_mng' => '1234'];
-=======
-$config['rest_valid_logins'] = ['admin' => '1234'];
->>>>>>> 2d2229a3184a632108c46a3b4646ece66fa7c066
 
 /*
 |--------------------------------------------------------------------------

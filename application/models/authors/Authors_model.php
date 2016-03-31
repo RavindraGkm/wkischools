@@ -100,17 +100,10 @@ class Authors_model extends CI_Model {
         $response = array();
         if($query->num_rows()>0) {
             $row = $query->row_array();
-<<<<<<< HEAD
             if($row['type']=='admin_mng') {
 //                $type="user";
 //                $query = $this->db->get_where('authors', array('type' => $type));
                 $sql = "SELECT authors.*, (SELECT COUNT(*) FROM ebooks WHERE ebooks.author_id = authors.id) AS no_ebooks, (SELECT COUNT(*) FROM compositions WHERE compositions.author_id = authors.id) AS no_compositions FROM authors where authors.type<>'admin_mng'";
-=======
-            if($row['type']=='admin') {
-//                $type="user";
-//                $query = $this->db->get_where('authors', array('type' => $type));
-                $sql = "SELECT authors.*, (SELECT COUNT(*) FROM ebooks WHERE ebooks.author_id = authors.id) AS no_ebooks, (SELECT COUNT(*) FROM compositions WHERE compositions.author_id = authors.id) AS no_compositions FROM authors where authors.type<>'admin'";
->>>>>>> 2d2229a3184a632108c46a3b4646ece66fa7c066
                 $query = $this->db->query($sql);
                 if ($query->num_rows() > 0) {
                     $response['status'] = 'success';

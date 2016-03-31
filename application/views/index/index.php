@@ -338,7 +338,6 @@
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li class="">
-<<<<<<< HEAD
                                                 <a class="nav-link" href="#change_session_school" data-toggle="modal"> Change
                                                     Session /School</a>
                                             </li>
@@ -357,49 +356,24 @@
                                     <li class="dropdown-submenu">
                                         <a href="<?php echo base_url('manage-codes?page=mng_codes');?>" class="nav-link  nav-toggle">
                                             Manage Codes
-=======
-                                                <a class="nav-link" href="#change_session_school" data-toggle="modal"> Change Session /School</a>
-                                            </li>
-                                            <li class="">
-                                                <a class="nav-link" href="#manage_default_session" data-toggle="modal"> Manage Default Session</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="<?php echo base_url('manage-school');?>" class="nav-link  nav-toggle">
-                                            Manage School
->>>>>>> 2d2229a3184a632108c46a3b4646ece66fa7c066
                                             <span class="arrow"></span>
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li class="">
-<<<<<<< HEAD
                                                 <a href="<?php echo base_url('manage-codes?page=mng_codes');?>" class="nav-link"> Manage Code </a>
                                             </li>
                                             <li class="">
                                                 <a href="<?php echo base_url('manage-codes?page=merge_codes');?>" class="nav-link"> Merge Codes </a>
-=======
-                                                <a href="<?php echo base_url('manage-school'); ?>" class="nav-link"> Manage Admin School </a>
-                                            </li>
-                                            <li class="">
-                                                <a href="<?php echo base_url('manage-school');?>" class="nav-link"> Manage School </a>
->>>>>>> 2d2229a3184a632108c46a3b4646ece66fa7c066
                                             </li>
                                         </ul>
                                     </li>
                                     <li class="dropdown-submenu">
-<<<<<<< HEAD
                                         <a href="<?php echo base_url('manage-subject-class?page=mng_class');?>" class="nav-link  nav-toggle">
                                             Manage Subject &amp; Class
-=======
-                                        <a href="javascript:;" class="nav-link  nav-toggle">
-                                            Manage Codes
->>>>>>> 2d2229a3184a632108c46a3b4646ece66fa7c066
                                             <span class="arrow"></span>
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li class="">
-<<<<<<< HEAD
                                                 <a href="<?php echo base_url('manage-subject-class?page=mng_class');?>" class="nav-link"> Manage Class </a>
                                             </li>
                                             <li class="">
@@ -407,28 +381,16 @@
                                             </li>
                                             <li class="">
                                                 <a href="<?php echo base_url('manage-subject-class?page=mng_sub_class_rel');?>" class="nav-link"> Subject Class Relation </a>
-=======
-                                                <a href="" class="nav-link"> Manage Code </a>
-                                            </li>
-                                            <li class="">
-                                                <a href="" class="nav-link"> Merge Codes </a>
->>>>>>> 2d2229a3184a632108c46a3b4646ece66fa7c066
                                             </li>
                                         </ul>
                                     </li>
                                     <li class="dropdown-submenu">
-<<<<<<< HEAD
                                         <a href="<?php echo base_url('manage-csc?page=mng_city');?>" class="nav-link  nav-toggle">
                                             Manage Country, State, City
-=======
-                                        <a href="javascript:;" class="nav-link  nav-toggle">
-                                            Manage Subject &amp; Class
->>>>>>> 2d2229a3184a632108c46a3b4646ece66fa7c066
                                             <span class="arrow"></span>
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li class="">
-<<<<<<< HEAD
                                                 <a href="<?php echo base_url('manage-csc?page=mng_city');?>" class="nav-link"> Manage City </a>
                                             </li>
                                             <li class="">
@@ -439,23 +401,6 @@
                                             </li>
                                         </ul>
                                     </li>
-=======
-                                                <a href="" class="nav-link"> Manage Class </a>
-                                            </li>
-                                            <li class="">
-                                                <a href="" class="nav-link"> Manage Subject </a>
-                                            </li>
-                                            <li class="">
-                                                <a href="" class="nav-link"> Subject Class Relation </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class=" ">
-                                        <a href="index.html" class="nav-link  active">
-                                             Manage Country, State, City
-                                        </a>
-                                    </li>
->>>>>>> 2d2229a3184a632108c46a3b4646ece66fa7c066
                                     <li class=" dropdown-submenu">
                                         <a href="index.html" class="nav-link  active"> Manage Receipt </a>
                                         <ul class="dropdown-menu">
@@ -482,12 +427,8 @@
                                         <a href="index.html" class="nav-link  active"> Manage Company </a>
                                     </li>
                                     <li class="dropdown-submenu">
-<<<<<<< HEAD
                                         <a href="javascript:;" class="nav-link nav-toggle "> Manage Account <span
                                                 class="arrow"></span> </a>
-=======
-                                        <a href="javascript:;" class="nav-link nav-toggle "> Manage Account <span class="arrow"></span> </a>
->>>>>>> 2d2229a3184a632108c46a3b4646ece66fa7c066
                                         <ul class="dropdown-menu">
                                             <li class="">
                                                 <a href="" class="nav-link"> Student Account</a>
@@ -501,12 +442,8 @@
                                         </ul>
                                     </li>
                                     <li class="dropdown-submenu">
-<<<<<<< HEAD
                                         <a href="javascript:;" class="nav-link nav-toggle "> Manage Master <span
                                                 class="arrow"></span> </a>
-=======
-                                        <a href="javascript:;" class="nav-link nav-toggle "> Manage Master <span class="arrow"></span> </a>
->>>>>>> 2d2229a3184a632108c46a3b4646ece66fa7c066
                                         <ul class="dropdown-menu">
                                             <li class="">
                                                 <a href="" class="nav-link"> Prospectus/From Master</a>
@@ -870,11 +807,7 @@
                                                             <a href="ui_buttons.html"> Manage Grade </a>
                                                         </li>
                                                         <li>
-<<<<<<< HEAD
                                                             <a href="ui_confirmations.html"> Manage Employee Class Relation </a>
-=======
-                                                            <a href="ui_confirmations.html"> Manage Employee Class Relation  </a>
->>>>>>> 2d2229a3184a632108c46a3b4646ece66fa7c066
                                                         </li>
                                                         <li>
                                                             <a href="ui_icons.html"> Exam Pattern Academic Grade Relation </a>
@@ -908,12 +841,8 @@
                                                             <a href="ui_page_progress_style_1.html"> Manage Student Backs </a>
                                                         </li>
                                                         <li>
-<<<<<<< HEAD
                                                             <a href="ui_page_progress_style_2.html"> Student Exam Remarks
                                                                 Relation </a>
-=======
-                                                            <a href="ui_page_progress_style_2.html"> Student Exam Remarks Relation </a>
->>>>>>> 2d2229a3184a632108c46a3b4646ece66fa7c066
                                                         </li>
                                                         <li>
                                                             <a href="ui_blockui.html"> Student Direct Attendance </a>
@@ -971,11 +900,7 @@
                                                             <a href="ui_buttons.html"> Employee Department Relation </a>
                                                         </li>
                                                         <li>
-<<<<<<< HEAD
                                                             <a href="ui_confirmations.html"> Dynamic Employee Report </a>
-=======
-                                                            <a href="ui_confirmations.html"> Dynamic Employee Report  </a>
->>>>>>> 2d2229a3184a632108c46a3b4646ece66fa7c066
                                                         </li>
                                                         <li>
                                                             <a href="ui_icons.html"> Employee Report </a>
@@ -1009,12 +934,8 @@
                                                             <a href="ui_page_progress_style_1.html"> Manage Student Backs </a>
                                                         </li>
                                                         <li>
-<<<<<<< HEAD
                                                             <a href="ui_page_progress_style_2.html"> Student Exam Remarks
                                                                 Relation </a>
-=======
-                                                            <a href="ui_page_progress_style_2.html"> Student Exam Remarks Relation </a>
->>>>>>> 2d2229a3184a632108c46a3b4646ece66fa7c066
                                                         </li>
                                                         <li>
                                                             <a href="ui_blockui.html"> Student Direct Attendance </a>
@@ -1187,12 +1108,8 @@
                                         <a href="layout_mega_menu_fixed.html" class="nav-link  "> Issue/Sale Items </a>
                                     </li>
                                     <li class=" ">
-<<<<<<< HEAD
                                         <a href="layout_mega_menu_fixed.html" class="nav-link  "> Store Requisition
                                             Approval </a>
-=======
-                                        <a href="layout_mega_menu_fixed.html" class="nav-link  "> Store Requisition Approval </a>
->>>>>>> 2d2229a3184a632108c46a3b4646ece66fa7c066
                                     </li>
                                     <li class=" ">
                                         <a href="layout_mega_menu_fixed.html" class="nav-link  "> Store Write Off/Lost </a>

@@ -1,10 +1,5 @@
 <!DOCTYPE html>
-
-<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
-<!--[if !IE]><!-->
 <html lang="en">
-
     <head>
         <meta charset="utf-8" />
         <title>Metronic | Dashboard</title>
@@ -12,7 +7,6 @@
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="" name="description" />
         <meta content="" name="author" />
-
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
         <?php
             echo link_tag('assets/css/font-awesome/css/font-awesome.min.css');
@@ -20,7 +14,6 @@
             echo link_tag('assets/css/bootstrap/bootstrap.min.css');
             echo link_tag('assets/css/bootstrap-switch/bootstrap-switch.min.css');
             echo link_tag('assets/css/uniform/uniform.default.css');
-
             echo link_tag('assets/css/bootstrap-daterangepicker/daterangepicker.min.css');
             echo link_tag('assets/css/morris/morris.css');
             echo link_tag('assets/css/fullcalendar/fullcalendar.min.css');
@@ -30,6 +23,7 @@
             echo link_tag('assets/css/layout3/layout.min.css');
             echo link_tag('assets/css/layout3/themes/default.min.css');
             echo link_tag('assets/css/layout3/custom.min.css');
+            echo link_tag('assets/css/sweet-alert.css');
         ?>
         <!-- END THEME LAYOUT STYLES -->
         <link rel="shortcut icon" href="favicon.ico" /> </head>
@@ -43,7 +37,7 @@
                 <div class="container">
                     <!-- BEGIN LOGO -->
                     <div class="page-logo">
-                        <a href="<?php echo base_url();?>">
+                        <a href="<?php echo base_url('');?>">
                             <img src="<?php echo base_url('assets/img/layouts3/logo-default.jpg'); ?>" alt="logo" class="logo-default">
                         </a>
                     </div>
@@ -443,13 +437,13 @@
                                                 class="arrow"></span> </a>
                                         <ul class="dropdown-menu">
                                             <li class="">
-                                                <a href="<?php echo base_url('manage-master?page=prospectus_form_master');?>" class="nav-link"> Prospectus/Form Master</a>
+                                                <a href="<?php echo base_url('manage-masters?page=prospectus_form_master');?>" class="nav-link"> Prospectus/Form Master</a>
                                             </li>
                                             <li class="">
-                                                <a href="<?php echo base_url('manage-master?page=provisional_fee_master');?>" class="nav-link"> Provisional/Fee Master</a>
+                                                <a href="<?php echo base_url('manage-masters?page=provisional_fee_master');?>" class="nav-link"> Provisional/Fee Master</a>
                                             </li>
                                             <li class=" ">
-                                                <a href="<?php echo base_url('manage-master?page=media_master');?>" class="nav-link"> Media Master</a>
+                                                <a href="<?php echo base_url('manage-masters?page=media_master');?>" class="nav-link"> Media Master</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -804,7 +798,7 @@
                                                             <a href="ui_buttons.html"> Manage Grade </a>
                                                         </li>
                                                         <li>
-                                                            <a href="ui_confirmations.html"> Manage Employee Class Relation </a>
+                                                            <a href="ui_confirmations.html"> Manage Employee Class Relation  </a>
                                                         </li>
                                                         <li>
                                                             <a href="ui_icons.html"> Exam Pattern Academic Grade Relation </a>
@@ -838,8 +832,7 @@
                                                             <a href="ui_page_progress_style_1.html"> Manage Student Backs </a>
                                                         </li>
                                                         <li>
-                                                            <a href="ui_page_progress_style_2.html"> Student Exam Remarks
-                                                                Relation </a>
+                                                            <a href="ui_page_progress_style_2.html"> Student Exam Remarks Relation </a>
                                                         </li>
                                                         <li>
                                                             <a href="ui_blockui.html"> Student Direct Attendance </a>
@@ -897,7 +890,7 @@
                                                             <a href="ui_buttons.html"> Employee Department Relation </a>
                                                         </li>
                                                         <li>
-                                                            <a href="ui_confirmations.html"> Dynamic Employee Report </a>
+                                                            <a href="ui_confirmations.html"> Dynamic Employee Report  </a>
                                                         </li>
                                                         <li>
                                                             <a href="ui_icons.html"> Employee Report </a>
@@ -931,8 +924,7 @@
                                                             <a href="ui_page_progress_style_1.html"> Manage Student Backs </a>
                                                         </li>
                                                         <li>
-                                                            <a href="ui_page_progress_style_2.html"> Student Exam Remarks
-                                                                Relation </a>
+                                                            <a href="ui_page_progress_style_2.html"> Student Exam Remarks Relation </a>
                                                         </li>
                                                         <li>
                                                             <a href="ui_blockui.html"> Student Direct Attendance </a>
@@ -1105,8 +1097,7 @@
                                         <a href="layout_mega_menu_fixed.html" class="nav-link  "> Issue/Sale Items </a>
                                     </li>
                                     <li class=" ">
-                                        <a href="layout_mega_menu_fixed.html" class="nav-link  "> Store Requisition
-                                            Approval </a>
+                                        <a href="layout_mega_menu_fixed.html" class="nav-link  "> Store Requisition Approval </a>
                                     </li>
                                     <li class=" ">
                                         <a href="layout_mega_menu_fixed.html" class="nav-link  "> Store Write Off/Lost </a>
@@ -1145,271 +1136,351 @@
             </div>
             <!-- END HEADER MENU -->
         </div>
-        <!-- END HEADER -->
-        <!-- BEGIN CONTAINER -->
         <div class="page-container">
-            <!-- BEGIN CONTENT -->
             <div class="page-content-wrapper">
-                <!-- BEGIN CONTENT BODY -->
-                <!-- BEGIN PAGE HEAD-->
                 <div class="page-head">
                     <div class="container">
-                        <!-- BEGIN PAGE TITLE -->
                         <div class="page-title">
-                            <h1>Dashboard
-                                <small>dashboard & statistics</small>
+                            <h1>Manage Master
+                                <small>manage prospectus/form, provisional/fee and media</small>
                             </h1>
                         </div>
-                        <!-- END PAGE TITLE -->
-                        <!-- BEGIN PAGE TOOLBAR -->
-                        <div class="page-toolbar">
-                            <!-- BEGIN THEME PANEL -->
-
-                            <!-- END THEME PANEL -->
-                        </div>
-                        <!-- END PAGE TOOLBAR -->
                     </div>
                 </div>
-                <!-- END PAGE HEAD-->
-                <!-- BEGIN PAGE CONTENT BODY -->
                 <div class="page-content">
                     <div class="container">
-                        <!-- BEGIN PAGE BREADCRUMBS -->
                         <ul class="page-breadcrumb breadcrumb">
                             <li>
-                                <a href="index.html">Home</a>
+                                <a href="<?php echo base_url('');?>">Manage</a>
                                 <i class="fa fa-circle"></i>
                             </li>
                             <li>
-                                <span>Dashboard</span>
+                                <span>Manage Prospectus/Form, Provisional/Fee and Media</span>
                             </li>
                         </ul>
-                        <!-- END PAGE BREADCRUMBS -->
-                        <!-- BEGIN PAGE CONTENT INNER -->
                         <div class="page-content-inner">
                             <div class="row">
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="portlet light ">
+                                <div class="col-md-12">
+                                    <div class="portlet box green">
                                         <div class="portlet-title">
-                                            <div class="caption caption-md">
-                                                <i class="icon-bar-chart font-red"></i>
-                                                <span class="caption-subject font-red bold uppercase">Member Activity</span>
-                                                <span class="caption-helper">weekly stats...</span>
-                                            </div>
-                                            <div class="actions">
-                                                <div class="btn-group btn-group-devided" data-toggle="buttons">
-                                                    <label class="btn btn-transparent green btn-outline btn-circle btn-sm active">
-                                                        <input type="radio" name="options" class="toggle" id="option1">Today</label>
-                                                    <label class="btn btn-transparent green btn-outline btn-circle btn-sm">
-                                                        <input type="radio" name="options" class="toggle" id="option2">Week</label>
-                                                    <label class="btn btn-transparent green btn-outline btn-circle btn-sm">
-                                                        <input type="radio" name="options" class="toggle" id="option2">Month</label>
-                                                </div>
+                                            <div class="caption">
+                                                <i class="fa fa-cogs"></i><span id="header_title"></span>
                                             </div>
                                         </div>
                                         <div class="portlet-body">
-                                            <div class="row number-stats margin-bottom-30">
-                                                <div class="col-md-6 col-sm-6 col-xs-6">
-                                                    <div class="stat-left">
-                                                        <div class="stat-chart">
-                                                            <!-- do not line break "sparkline_bar" div. sparkline chart has an issue when the container div has line break -->
-                                                            <div id="sparkline_bar"></div>
+                                            <div class="tabbable-line">
+                                                <input type="hidden" value="<?php echo $active_tab; ?>" id="active_tab_val"/>
+                                                <ul class="nav nav-tabs ">
+                                                    <li id="tab_prospectus_form_master">
+                                                        <a href="#prospectus_form_master" class="tab_val_header_prospectus_form" data-toggle="tab"><i class="fa fa-wrench"></i> Manage Prospectus/Form Master</a>
+                                                    </li>
+                                                    <li id="tab_provisional_fee_master">
+                                                        <a href="#provisional_fee_master" class="tab_val_header_provisional_fee" data-toggle="tab"><i class="fa fa-wrench"></i> Manage Provisional/Fee Master</a>
+                                                    </li>
+                                                    <li id="tab_media_master">
+                                                        <a href="#media_master" class="tab_val_header_media_master" data-toggle="tab"><i class="fa fa-wrench"></i> Manage Media Master </a>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="tab-content">
+                                                    <div class="tab-pane" id="prospectus_form_master">
+                                                        <div class="row">
+                                                            <div class="col-md-7">
+                                                                <form role="form">
+                                                                    <div class="section-manage-prospectus-form-master">
+                                                                        <div class="form-body">
+                                                                            <div class="row">
+                                                                                <div class="col-md-6">
+                                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                                        <input type="text" class="form-control edited" disabled="" value="2015-2016" name="prospectus_session" id="prospectus_session">
+                                                                                        <label for="prospectus_session">Session</label>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-6">
+                                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                                        <input type="text" class="form-control" name="prospectus_title" id="prospectus_title" value="">
+                                                                                        <label for="prospectus_title">Title</label>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-md-6">
+                                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                                        <input type="text" class="form-control" name="prospectus_from_no"id="prospectus_from_no" value="">
+                                                                                        <label for="prospectus_from_no">From No.</label>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-6">
+                                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                                        <input type="text" class="form-control" name="prospectus_to_no" id="prospectus_to_no" value="">
+                                                                                        <label for="prospectus_to_no">To No.</label>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-md-6">
+                                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                                        <input type="text" class="form-control" name="prospectus_amount"id="prospectus_amount" value="">
+                                                                                        <label for="prospectus_amount">Amount</label>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-6">
+                                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                                        <div class="md-checkbox">
+                                                                                            <input type="checkbox" name="chk_is_completed" id="chk_is_completed" class="md-check" value="IsCompleted">
+                                                                                            <label for="chk_is_completed">
+                                                                                                <span class="inc"></span>
+                                                                                                <span class="check"></span>
+                                                                                                <span class="box"></span> Completed
+                                                                                            </label>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-md-6">
+                                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                                        <input type="text" class="form-control" name="prospectus_remarks"id="prospectus_remarks" value="">
+                                                                                        <label for="prospectus_remarks">Remarks</label>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <div class="form-group">
+                                                                                        <br/><label for=" ">Apply in Schools :</label><hr/>
+                                                                                        <div class="md-checkbox-list">
+                                                                                            <div class="md-checkbox">
+                                                                                                <input type="checkbox" name="chk_select_all_school" id="chk_select_all_school" class="md-check">
+                                                                                                <label for="chk_select_all_school">
+                                                                                                    <span class="inc"></span>
+                                                                                                    <span class="check"></span>
+                                                                                                    <span class="box"></span> Select All
+                                                                                                </label>
+                                                                                            </div>
+                                                                                            <div class="md-checkbox">
+                                                                                                <input type="checkbox" name="chk_b_n_p_s" id="chk_b_n_p_s" class="md-check" value="Bhopal Nobles Public School">
+                                                                                                <label for="chk_b_n_p_s">
+                                                                                                    <span class="inc"></span>
+                                                                                                    <span class="check"></span>
+                                                                                                    <span class="box"></span> Bhopal Nobles Public School
+                                                                                                </label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div id="section-id-card-header">
+                                                                        <div class="col-md-12">
+
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                            <div class="col-md-5">
+
+                                                            </div>
                                                         </div>
-                                                        <div class="stat-number">
-                                                            <div class="title"> Total </div>
-                                                            <div class="number"> 2460 </div>
+                                                        <hr>
+                                                        <div class="row">
+                                                            <div class="col-md-offset-2 col-md-8">
+                                                                <div class="form-group form-md-line-input form-md-floating-label">
+                                                                    <button type="button" class="btn green" name="create_prospectus_form_master" id="create_prospectus_form_master"><i class="fa fa-save"></i>&nbsp;&nbsp;Save Prospectus</button>
+                                                                    <button type="button" id="btn_cancel" class="btn default">Cancel</button>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-md-6 col-sm-6 col-xs-6">
-                                                    <div class="stat-right">
-                                                        <div class="stat-chart">
-                                                            <!-- do not line break "sparkline_bar" div. sparkline chart has an issue when the container div has line break -->
-                                                            <div id="sparkline_bar2"></div>
+                                                    <div class="tab-pane" id="provisional_fee_master">
+                                                        <div class="row">
+                                                            <div class="col-md-7">
+                                                                <form role="form">
+                                                                    <div class="section-manage-provisional-fee-master">
+                                                                        <div class="form-body">
+                                                                            <div class="row">
+                                                                                <div class="col-md-6">
+                                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                                        <div class="form-group form-md-line-input form-md-floating-label">
+                                                                                            <select class="form-control" name="drop_company_name" id="drop_company_name">
+                                                                                                <option value=""></option>
+                                                                                                <option value="">----Select Company----</option>
+                                                                                                <option value="Bhopal Nobles Public School">Bhopal Nobles Public School</option>
+                                                                                            </select>
+                                                                                            <label for="drop_company_name">Company</label>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-6"></div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-md-6">
+                                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                                        <input type="text" class="form-control" name="provisional_title"id="provisional_title" value="">
+                                                                                        <label for="provisional_title">Title</label>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-6">
+                                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                                        <input type="text" class="form-control edited" disabled="" value="2015-2016" name="provisional_session" id="provisional_session">
+                                                                                        <label for="provisional_session">Session</label>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-md-6">
+                                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                                        <input type="text" class="form-control" name="provisional_amount"id="provisional_amount" value="">
+                                                                                        <label for="provisional_amount">Amount</label>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-6">
+                                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                                        <input type="text" class="form-control" name="provisional_remarks"id="provisional_remarks" value="">
+                                                                                        <label for="provisional_remarks">Remarks</label>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <div class="form-group">
+                                                                                        <br/><label for=" ">Apply in Schools :</label><hr/>
+                                                                                        <div class="md-checkbox-list">
+                                                                                            <div class="md-checkbox">
+                                                                                                <input type="checkbox" name="chk_select_all_school" id="chk_select_all_school" class="md-check">
+                                                                                                <label for="chk_select_all_school">
+                                                                                                    <span class="inc"></span>
+                                                                                                    <span class="check"></span>
+                                                                                                    <span class="box"></span> Select All
+                                                                                                </label>
+                                                                                            </div>
+                                                                                            <div class="md-checkbox">
+                                                                                                <input type="checkbox" name="chk_proc_b_n_p_s" id="chk_prov_b_n_p_s" class="md-check" value="Bhopal Nobles Public School">
+                                                                                                <label for="chk_prov_b_n_p_s">
+                                                                                                    <span class="inc"></span>
+                                                                                                    <span class="check"></span>
+                                                                                                    <span class="box"></span> Bhopal Nobles Public School
+                                                                                                </label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div id="section-id-card-header">
+                                                                        <div class="col-md-12">
+
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                            <div class="col-md-5">
+
+                                                            </div>
                                                         </div>
-                                                        <div class="stat-number">
-                                                            <div class="title"> New </div>
-                                                            <div class="number"> 719 </div>
+                                                        <hr>
+                                                        <div class="row">
+                                                            <div class="col-md-offset-2 col-md-8">
+                                                                <div class="form-group form-md-line-input form-md-floating-label">
+                                                                    <button type="button" class="btn green" name="create_provisional_fee_master" id="create_provisional_fee_master"><i class="fa fa-save"></i>&nbsp;&nbsp;Save Provisional Info</button>
+                                                                    <button type="button" id="btn_cancel" class="btn default">Cancel</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane" id="media_master">
+                                                        <div class="row">
+                                                            <div class="col-md-7">
+                                                                <form role="form">
+                                                                    <div class="section-manage-media-master">
+                                                                        <div class="form-body">
+                                                                            <div class="row">
+                                                                                <div class="col-md-6">
+                                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                                        <input type="text" class="form-control" name="media_code"id="media_code" value="">
+                                                                                        <label for="media_code">Media Code</label>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-6">
+                                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                                        <select class="form-control" name="drop_media_type" id="drop_media_type">
+                                                                                            <option value=""></option>
+                                                                                            <option value="">----Select Media----</option>
+                                                                                            <option value="Electronic Media">Electronic Media</option>
+                                                                                        </select>
+                                                                                        <label for="drop_media_type">Media Type</label>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-md-6">
+                                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                                        <input type="text" class="form-control" name="media_name"id="media_name" value="">
+                                                                                        <label for="media_name">Media Name</label>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-6">
+                                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                                        <input type="text" class="form-control" name="contact_person" id="contact_person">
+                                                                                        <label for="contact_person">Contact Person</label>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-md-6">
+                                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                                        <input type="text" class="form-control" name="media_phone"id="media_phone" value="">
+                                                                                        <label for="media_phone">Phone No</label>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-6">
+                                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                                        <input type="text" class="form-control" name="media_mobile"id="media_mobile" value="">
+                                                                                        <label for="media_mobile">Mobile No</label>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-md-6">
+                                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                                        <input type="text" class="form-control" name="media_address"id="media_address" value="">
+                                                                                        <label for="media_address">Address</label>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div id="section-id-card-header">
+                                                                        <div class="col-md-12">
+
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                            <div class="col-md-5">
+
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="row">
+                                                            <div class="col-md-offset-2 col-md-8">
+                                                                <div class="form-group form-md-line-input form-md-floating-label">
+                                                                    <button type="button" class="btn green" name="create_media_master" id="create_media_master"><i class="fa fa-save"></i>&nbsp;&nbsp;Save Media Info</button>
+                                                                    <button type="button" id="btn_cancel" class="btn default">Cancel</button>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="table-scrollable table-scrollable-borderless">
-                                                <table class="table table-hover table-light">
-                                                    <thead>
-                                                        <tr class="uppercase">
-                                                            <th colspan="2"> MEMBER </th>
-                                                            <th> Earnings </th>
-                                                            <th> CASES </th>
-                                                            <th> CLOSED </th>
-                                                            <th> RATE </th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tr>
-                                                        <td class="fit">
-                                                            <img class="user-pic rounded" src="<?php echo base_url('assets/img/layouts3/avatar4.jpg');?>"> </td>
-                                                        <td>
-                                                            <a href="javascript:;" class="primary-link">Brain</a>
-                                                        </td>
-                                                        <td> $345 </td>
-                                                        <td> 45 </td>
-                                                        <td> 124 </td>
-                                                        <td>
-                                                            <span class="bold theme-font">80%</span>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="fit">
-                                                            <img class="user-pic rounded" src="<?php echo base_url('assets/img/layouts3/avatar5.jpg');?>""> </td>
-                                                        <td>
-                                                            <a href="javascript:;" class="primary-link">Nick</a>
-                                                        </td>
-                                                        <td> $560 </td>
-                                                        <td> 12 </td>
-                                                        <td> 24 </td>
-                                                        <td>
-                                                            <span class="bold theme-font">67%</span>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="fit">
-                                                            <img class="user-pic rounded" src="<?php echo base_url('assets/img/layouts3/avatar6.jpg');?>""> </td>
-                                                        <td>
-                                                            <a href="javascript:;" class="primary-link">Tim</a>
-                                                        </td>
-                                                        <td> $1,345 </td>
-                                                        <td> 450 </td>
-                                                        <td> 46 </td>
-                                                        <td>
-                                                            <span class="bold theme-font">98%</span>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="fit">
-                                                            <img class="user-pic rounded" src="<?php echo base_url('assets/img/layouts3/avatar7.jpg');?>""> </td>
-                                                        <td>
-                                                            <a href="javascript:;" class="primary-link">Tom</a>
-                                                        </td>
-                                                        <td> $645 </td>
-                                                        <td> 50 </td>
-                                                        <td> 89 </td>
-                                                        <td>
-                                                            <span class="bold theme-font">58%</span>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </div>
+                                        
                                         </div>
                                     </div>
+
                                 </div>
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="portlet light ">
-                                        <div class="portlet-title">
-                                            <div class="caption caption-md">
-                                                <i class="icon-bar-chart font-green"></i>
-                                                <span class="caption-subject font-green bold uppercase">Customer Support</span>
-                                                <span class="caption-helper">45 pending</span>
-                                            </div>
-                                            <div class="inputs">
-                                                <div class="portlet-input input-inline input-small ">
-                                                    <div class="input-icon right">
-                                                        <i class="icon-magnifier"></i>
-                                                        <input type="text" class="form-control form-control-solid input-circle" placeholder="search..."> </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="portlet-body">
-                                            <div class="scroller" style="height: 338px;" data-always-visible="1" data-rail-visible1="0" data-handle-color="#D7DCE2">
-                                                <div class="general-item-list">
-                                                    <div class="item">
-                                                        <div class="item-head">
-                                                            <div class="item-details">
-                                                                <img class="item-pic rounded" src="<?php echo base_url('assets/img/layouts3/avatar4.jpg');?>"">
-                                                                <a href="" class="item-name primary-link">Nick Larson</a>
-                                                                <span class="item-label">3 hrs ago</span>
-                                                            </div>
-                                                            <span class="item-status">
-                                                                <span class="badge badge-empty badge-success"></span> Open</span>
-                                                        </div>
-                                                        <div class="item-body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </div>
-                                                    </div>
-                                                    <div class="item">
-                                                        <div class="item-head">
-                                                            <div class="item-details">
-                                                                <img class="item-pic rounded" src="<?php echo base_url('assets/img/layouts3/avatar3.jpg');?>"">
-                                                                <a href="" class="item-name primary-link">Mark</a>
-                                                                <span class="item-label">5 hrs ago</span>
-                                                            </div>
-                                                            <span class="item-status">
-                                                                <span class="badge badge-empty badge-warning"></span> Pending</span>
-                                                        </div>
-                                                        <div class="item-body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat tincidunt ut laoreet. </div>
-                                                    </div>
-                                                    <div class="item">
-                                                        <div class="item-head">
-                                                            <div class="item-details">
-                                                                <img class="item-pic rounded" src="<?php echo base_url('assets/img/layouts3/avatar6.jpg');?>"">
-                                                                <a href="" class="item-name primary-link">Nick Larson</a>
-                                                                <span class="item-label">8 hrs ago</span>
-                                                            </div>
-                                                            <span class="item-status">
-                                                                <span class="badge badge-empty badge-primary"></span> Closed</span>
-                                                        </div>
-                                                        <div class="item-body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. </div>
-                                                    </div>
-                                                    <div class="item">
-                                                        <div class="item-head">
-                                                            <div class="item-details">
-                                                                <img class="item-pic rounded" src="<?php echo base_url('assets/img/layouts3/avatar7.jpg');?>"">
-                                                                <a href="" class="item-name primary-link">Nick Larson</a>
-                                                                <span class="item-label">12 hrs ago</span>
-                                                            </div>
-                                                            <span class="item-status">
-                                                                <span class="badge badge-empty badge-danger"></span> Pending</span>
-                                                        </div>
-                                                        <div class="item-body"> Consectetuer adipiscing elit Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </div>
-                                                    </div>
-                                                    <div class="item">
-                                                        <div class="item-head">
-                                                            <div class="item-details">
-                                                                <img class="item-pic rounded" src="<?php echo base_url('assets/img/layouts3/avatar9.jpg');?>"">
-                                                                <a href="" class="item-name primary-link">Richard Stone</a>
-                                                                <span class="item-label">2 days ago</span>
-                                                            </div>
-                                                            <span class="item-status">
-                                                                <span class="badge badge-empty badge-danger"></span> Open</span>
-                                                        </div>
-                                                        <div class="item-body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, ut laoreet dolore magna aliquam erat volutpat. </div>
-                                                    </div>
-                                                    <div class="item">
-                                                        <div class="item-head">
-                                                            <div class="item-details">
-                                                                <img class="item-pic rounded" src="<?php echo base_url('assets/img/layouts3/avatar8.jpg');?>"">
-                                                                <a href="" class="item-name primary-link">Dan</a>
-                                                                <span class="item-label">3 days ago</span>
-                                                            </div>
-                                                            <span class="item-status">
-                                                                <span class="badge badge-empty badge-warning"></span> Pending</span>
-                                                        </div>
-                                                        <div class="item-body"> Lorem ipsum dolor sit amet, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </div>
-                                                    </div>
-                                                    <div class="item">
-                                                        <div class="item-head">
-                                                            <div class="item-details">
-                                                                <img class="item-pic rounded" src="<?php echo base_url('assets/img/layouts3/avatar2.jpg');?>"">
-                                                                <a href="" class="item-name primary-link">Larry</a>
-                                                                <span class="item-label">4 hrs ago</span>
-                                                            </div>
-                                                            <span class="item-status">
-                                                                <span class="badge badge-empty badge-success"></span> Open</span>
-                                                        </div>
-                                                        <div class="item-body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                         <!-- END PAGE CONTENT INNER -->
@@ -1586,7 +1657,6 @@
     echo script_tag('assets/js/uniform/jquery.uniform.min.js');
     echo script_tag('assets/js/bootstrap-switch/bootstrap-switch.min.js');
     echo script_tag('assets/js/plugins/moment.min.js');
-    echo script_tag('assets/js/bootstrap-daterangepicker/daterangepicker.min.js');
     echo script_tag('assets/js/morris/morris.min.js');
     echo script_tag('assets/js/morris/raphael-min.js');
     echo script_tag('assets/js/plugins/counterup/jquery.waypoints.min.js');
@@ -1595,23 +1665,18 @@
     echo script_tag('assets/js/plugins/flot/jquery.flot.min.js');
     echo script_tag('assets/js/plugins/flot/jquery.flot.resize.min.js');
     echo script_tag('assets/js/plugins/flot/jquery.flot.categories.min.js');
-    echo script_tag('assets/js/plugins/jquery-easypiechart/jquery.easypiechart.min.js');
     echo script_tag('assets/js/plugins/jquery.sparkline.min.js');
-    echo script_tag('assets/js/plugins/jqvmap/jqvmap/jquery.vmap.js');
-    echo script_tag('assets/js/plugins/jqvmap/jqvmap/maps/jquery.vmap.russia.js');
-    echo script_tag('assets/js/plugins/jqvmap/jqvmap/maps/jquery.vmap.world.js');
-    echo script_tag('assets/js/plugins/jqvmap/jqvmap/maps/jquery.vmap.europe.js');
-    echo script_tag('assets/js/plugins/jqvmap/jqvmap/maps/jquery.vmap.germany.js');
-    echo script_tag('assets/js/plugins/jqvmap/jqvmap/maps/jquery.vmap.usa.js');
-    echo script_tag('assets/js/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js');
     echo script_tag('assets/js/scripts/app.min.js');
     echo script_tag('assets/js/pages/scripts/dashboard.min.js');
     echo script_tag('assets/js/layout3/layout.min.js');
     echo script_tag('assets/js/layout3/demo.min.js');
-    echo script_tag('assets/js/global/scripts/quick-sidebar.min.js');
-    echo script_tag('assets/js/app-js/index.js');
+    echo script_tag('assets/js/bootstrap/bootstrap-growl.min.js');
+    echo script_tag('assets/js/bootstrap/sweet-alert.min.js');
+    echo script_tag('assets/js/app-js/manage/manage-masters/manage-masters.js');
     ?>
 </html>
 <script type="text/javascript">
-    new WKI_SAAS.Index("<?php echo base_url(); ?>");
+    $(document).ready(function () {
+        new WKISCHOOL.ManageMasters("<?php echo base_url(); ?>");
+    });
 </script>

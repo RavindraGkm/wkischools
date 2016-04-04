@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 require(APPPATH.'libraries/REST_Controller.php');
 
-class Country_mng extends REST_Controller {
+class Fee_head_manage extends REST_Controller {
     public function index_post () {
         header("Access-Control-Allow-Origin: *");
         header("Access-Control-Allow-Methods: POST");
@@ -14,8 +14,8 @@ class Country_mng extends REST_Controller {
         else {
             $params = $this->post();
             $this->load->database();
-            $this->load->model('csc_mng/CSC_mng_model');
-            $response = $this->CSC_mng_model->create_new_country($params);
+            $this->load->model('fee_head_manage/fee_head_manage_model');
+            $response = $this->fee_head_manage_model->add_new_fee_head($params);
             if($response['status']=='success') {
                 $this->response($response,REST_Controller::HTTP_OK);
             }
@@ -30,23 +30,23 @@ class Country_mng extends REST_Controller {
     }
 
     public function index_get ($id=0) {
-    header("Access-Control-Allow-Origin: *");
-    header("Access-Control-Allow-Methods: GET");
-    $this->load->database();
-    $this->load->model('csc_mng/CSC_mng_model');
-    $response = $this->CSC_mng_model->get_country_list();
-    if ($response['status']=='success') {
-        $this->response($response, REST_Controller::HTTP_OK);
-    }
-    else {
-        if($response['msg']=='Server Error') {
-            $response = array('errors' => array($response['msg']));
-            $this->response($response, REST_Controller::HTTP_INTERNAL_SERVER_ERROR);
+        header("Access-Control-Allow-Origin: *");
+        header("Access-Control-Allow-Methods: GET");
+        $this->load->database();
+        $this->load->model('company_manage/Company_manage_model');
+        $response = $this->Company_manage_model->get_company_list();
+        if ($response['status']=='success') {
+            $this->response($response, REST_Controller::HTTP_OK);
         }
         else {
-            $this->response($response, REST_Controller::HTTP_UNAUTHORIZED);
+            if($response['msg']=='Server Error') {
+                $response = array('errors' => array($response['msg']));
+                $this->response($response, REST_Controller::HTTP_INTERNAL_SERVER_ERROR);
+            }
+            else {
+                $this->response($response, REST_Controller::HTTP_UNAUTHORIZED);
+            }
         }
+        $this->db->close();
     }
-    $this->db->close();
-}
 }

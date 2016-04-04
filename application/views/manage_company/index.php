@@ -48,14 +48,9 @@
                          class="logo-default">
                 </a>
             </div>
-            <!-- END LOGO -->
-            <!-- BEGIN RESPONSIVE MENU TOGGLER -->
-            <a href="javascript:;" class="menu-toggler"></a>
-            <!-- END RESPONSIVE MENU TOGGLER -->
-            <!-- BEGIN TOP NAVIGATION MENU -->
+<!--            <a href="javascript:;" class="menu-toggler"></a>-->
             <div class="top-menu">
                 <ul class="nav navbar-nav pull-right">
-                    <!-- BEGIN NOTIFICATION DROPDOWN -->
                     <li class="dropdown dropdown-extended dropdown-notification dropdown-dark"
                         id="header_notification_bar">
                         <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
@@ -340,11 +335,8 @@
             <!-- END TOP NAVIGATION MENU -->
         </div>
     </div>
-    <!-- END HEADER TOP -->
-    <!-- BEGIN HEADER MENU -->
     <div class="page-header-menu">
         <div class="container">
-            <!-- BEGIN HEADER SEARCH BOX -->
             <div class="hor-menu  ">
                 <ul class="nav navbar-nav">
                     <li class="menu-dropdown classic-menu-dropdown active">
@@ -1177,52 +1169,39 @@
             <div class="container">
                 <!-- BEGIN PAGE TITLE -->
                 <div class="page-title">
-                    <h1>Manage School
-                        <small>manage School</small>
+                    <h1>Manage Company
+                        <small>manage company</small>
                     </h1>
                 </div>
-                <!-- END PAGE TITLE -->
-                <!-- BEGIN PAGE TOOLBAR -->
                 <div class="page-toolbar">
-                    <!-- BEGIN THEME PANEL -->
-
-                    <!-- END THEME PANEL -->
                 </div>
-                <!-- END PAGE TOOLBAR -->
             </div>
         </div>
-        <!-- END PAGE HEAD-->
-        <!-- BEGIN PAGE CONTENT BODY -->
         <div class="page-content">
             <div class="container">
-                <!-- BEGIN PAGE BREADCRUMBS -->
                 <ul class="page-breadcrumb breadcrumb">
                     <li>
                         <a href="index.html">Manage</a>
                         <i class="fa fa-circle"></i>
                     </li>
                     <li>
-                        <span>Manage School</span>
+                        <span>Manage Company</span>
                     </li>
                 </ul>
-                <!-- END PAGE BREADCRUMBS -->
-                <!-- BEGIN PAGE CONTENT INNER -->
                 <div class="page-content-inner">
                     <div class="row">
                         <div class="col-md-12">
-
-
                             <div class="portlet box green">
                                 <div class="portlet-title">
                                     <div class="caption">
-                                        <i class="fa fa-cogs"></i>Manage School
+                                        <i class="fa fa-cogs"></i>Manage Company
                                     </div>
                                 </div>
                                 <div class="portlet-body">
                                     <div class="tabbable-line">
                                         <ul class="nav nav-tabs ">
                                             <li class="active">
-                                                <a href="#tab_mng_school" data-toggle="tab"><i class="fa fa-building"></i> Manage School </a>
+                                                <a href="#tab_mng_school" data-toggle="tab"><i class="fa fa-building"></i> Company information </a>
                                             </li>
                                         </ul>
                                         <div class="tab-content">
@@ -1231,128 +1210,138 @@
                                                     <form role="form">
                                                         <div class="section-school-info">
                                                             <div class="form-body">
-                                                                <div class="col-md-4">
-                                                                    <div
-                                                                        class="form-group form-md-line-input form-md-floating-label">
-                                                                        <input type="text" class="form-control"
-                                                                               name="school_name" id="school_name"
-                                                                               value="">
-                                                                        <label for="school_name">School Name</label>
+                                                                <div class="col-md-3">
+                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                        <input type="text" class="form-control" name="company_name" id="company_name" value="">
+                                                                        <label for="company_name">Company Name</label>
+                                                                    </div>
+                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                        <input type="text" class="form-control" name="company_contact_person" id="company_contact_person" value="">
+                                                                        <label for="company_contact_person">Contact Person.</label>
                                                                     </div>
                                                                     <div
                                                                         class="form-group form-md-line-input form-md-floating-label">
-                                                                        <input type="text" class="form-control"
-                                                                               name="school_phone_no"
-                                                                               id="school_phone_no" value="">
-                                                                        <label for="school_phone_no">Phone No.</label>
+                                                                        <input type="text" class="form-control" name="company_code" id="company_code" value="">
+                                                                        <label for="company_code">Code</label>
                                                                     </div>
                                                                     <div
                                                                         class="form-group form-md-line-input form-md-floating-label">
-                                                                        <input type="text" class="form-control"
-                                                                               name="school_fax" id="school_fax"
-                                                                               value="">
-                                                                        <label for="school_fax">Fax</label>
+                                                                        <input type="text" class="form-control" name="company_email" id="company_email" value="">
+                                                                        <label for="company_email">Email</label>
                                                                     </div>
-                                                                    <div
-                                                                        class="form-group form-md-line-input form-md-floating-label">
-                                                                        <input type="text" class="form-control"
-                                                                               id="school_affiliation" value="">
-                                                                        <label
-                                                                            for="school_affiliation">Affiliation</label>
+                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                        <input type="text" class="form-control" name="company_website" id="company_website" value="">
+                                                                        <label for="company_website">Web Address</label>
+                                                                    </div>
+                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                        <input type="text" class="form-control" name="company_address" id="company_address" value="">
+                                                                        <label for="company_address">Company Address</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                        <input type="text" class="form-control" name="company_registration_no" id="company_registration_no" value="">
+                                                                        <label for="company_registration_no">Registration No.</label>
+                                                                    </div>
+                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                        <input type="text" class="form-control" name="company_pf_no" id="company_pf_no" value="">
+                                                                        <label for="company_pf_no">PF No.</label>
+                                                                    </div>
+                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                        <input type="text" class="form-control" name="company_tin_no" id="company_tin_no" value="">
+                                                                        <label for="company_tin_no">TIN No.</label>
+                                                                    </div>
+                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                        <input type="text" class="form-control" name="company_pan_no" id="company_pan_no" value="">
+                                                                        <label for="company_pan_no">PAN No.</label>
+                                                                    </div>
+                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                        <input type="text" class="form-control" name="company_mobile" id="company_mobile" value="">
+                                                                        <label for="company_mobile">Mobile No.</label>
+                                                                    </div>
+                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                        <input type="text" class="form-control" name="company_phone_no" id="company_phone_no" value="">
+                                                                        <label for="company_phone_no">Phone No.</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                        <select class="form-control" name="drop_company_start_year" id="drop_company_start_year">
+                                                                            <option value=""></option>
+                                                                            <option value="">----Select----</option>
+                                                                            <?php
+                                                                            for ($i=2010;$i<=2030;$i++) {
+                                                                                ?>
+                                                                                <option value="<?php echo $i;?>"><?php echo $i;?></option>
+                                                                                <?php
+                                                                            }
+                                                                            ?>
+                                                                        </select>
+                                                                        <label for="drop_company_start_year">Start Year</label>
+                                                                    </div>
+                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                        <select class="form-control" name="drop_company_end_year" id="drop_company_end_year">
+                                                                            <option value=""></option>
+                                                                            <option value="">----Select----</option>
+                                                                            <?php
+                                                                            for ($i=2011;$i<=2031;$i++) {
+                                                                            ?>
+                                                                                <option value="<?php echo $i;?>"><?php echo $i;?></option>
+                                                                            <?php
+                                                                            }
+                                                                            ?>
+                                                                        </select>
+                                                                        <label for="drop_company_end_year">End Year</label>
+                                                                    </div>
+                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                        <div class="md-checkbox">
+                                                                            <input type="checkbox" name="chk_is_own_voucher" id="chk_is_own_voucher" class="md-check" value="true">
+                                                                            <label for="chk_is_own_voucher">
+                                                                                <span class="inc"></span>
+                                                                                <span class="check"></span>
+                                                                                <span class="box"></span> Each Voucher Type has its own Voucher no.?
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                        <div class="md-checkbox">
+                                                                            <input type="checkbox" name="chk_post_dated_cheque" id="chk_post_dated_cheque" class="md-check" value="accepted">
+                                                                            <label for="chk_post_dated_cheque">
+                                                                                <span class="inc"></span>
+                                                                                <span class="check"></span>
+                                                                                <span class="box"></span> Accept Post Dated Cheques
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                                        <div class="md-checkbox">
+                                                                            <input type="checkbox" name="chk_status" id="chk_status" class="md-check" value="Disable">
+                                                                            <label for="chk_status">
+                                                                                <span class="inc"></span>
+                                                                                <span class="check"></span>
+                                                                                <span class="box"></span> Disable
+                                                                            </label>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-4">
-                                                                    <div class="form-group form-md-line-input form-md-floating-label">
-                                                                        <input type="text" class="form-control" name="school_admission_no" id="school_admission_no" value="">
-                                                                        <label for="school_admission_no">Admission No.</label>
-                                                                    </div>
-                                                                    <div class="form-group form-md-line-input form-md-floating-label">
-                                                                        <input type="text" class="form-control" name=" school_address" id="school_address" value="">
-                                                                        <label for="school_address">Address</label>
-                                                                    </div>
-                                                                    <div class="form-group form-md-line-input form-md-floating-label">
-                                                                        <input type="text" class="form-control" name="school_website" id="school_website" value="">
-                                                                        <label for="school_website">Web Address</label>
-                                                                    </div>
-                                                                    <div class="form-group form-md-line-input form-md-floating-label">
-                                                                        <input type="text" class="form-control" name="school_email" id="school_email" value="">
-                                                                        <label for="school_email">Email</label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-4">
-                                                                    <div
-                                                                        class="form-group form-md-line-input form-md-floating-label">
-                                                                        <input type="text" class="form-control"
-                                                                               name="school_code" id="school_code"
-                                                                               value="">
-                                                                        <label for="school_code">School Code</label>
-                                                                    </div>
                                                                     <div class="form-group">
-                                                                        <label for="school_admission_no">School
-                                                                            Type:</label><br/>
-
-                                                                        <div class="md-checkbox-inline">
+                                                                        <br/><label for=" ">School Relation :</label><hr/>
+                                                                        <div class="md-checkbox-list">
                                                                             <div class="md-checkbox">
-                                                                                <input type="checkbox"
-                                                                                       name="chk_school_type"
-                                                                                       id="chk_play_school"
-                                                                                       class="md-check">
-                                                                                <label for="chk_play_school">
+                                                                                <input type="checkbox" name="chk_select_all_school" id="chk_select_all_school" class="md-check">
+                                                                                <label for="chk_select_all_school">
                                                                                     <span class="inc"></span>
                                                                                     <span class="check"></span>
-                                                                                    <span class="box"></span> Play
-                                                                                    School
+                                                                                    <span class="box"></span> Select All
                                                                                 </label>
                                                                             </div>
                                                                             <div class="md-checkbox">
-                                                                                <input type="checkbox"
-                                                                                       name="chk_school_type"
-                                                                                       id="chk_pri_school"
-                                                                                       class="md-check">
-                                                                                <label for="chk_pri_school">
+                                                                                <input type="checkbox" name="chk_b_n_p_s" id="chk_b_n_p_s" class="md-check" value="Bhopal Nobles Public School">
+                                                                                <label for="chk_b_n_p_s">
                                                                                     <span class="inc"></span>
                                                                                     <span class="check"></span>
-                                                                                    <span class="box"></span> Primery
-                                                                                    School
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="md-checkbox-inline">
-                                                                            <div class="md-checkbox">
-                                                                                <input type="checkbox"
-                                                                                       name="chk_school_type"
-                                                                                       id="chk_sec_school"
-                                                                                       class="md-check">
-                                                                                <label for="chk_sec_school">
-                                                                                    <span class="inc"></span>
-                                                                                    <span class="check"></span>
-                                                                                    <span class="box"></span> Sec.
-                                                                                    School
-                                                                                </label>
-                                                                            </div>
-                                                                            <div class="md-checkbox">
-                                                                                <input type="checkbox"
-                                                                                       name="chk_school_type"
-                                                                                       id="chk_high_sec_school"
-                                                                                       class="md-check">
-                                                                                <label for="chk_high_sec_school">
-                                                                                    <span class="inc"></span>
-                                                                                    <span class="check"></span>
-                                                                                    <span class="box"></span> Higher
-                                                                                    Sec. School
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="md-checkbox-inline">
-                                                                            <div class="md-checkbox">
-                                                                                <input type="checkbox"
-                                                                                       name="chk_school_type"
-                                                                                       id="chk_other_school"
-                                                                                       class="md-check">
-                                                                                <label for="chk_other_school">
-                                                                                    <span class="inc"></span>
-                                                                                    <span class="check"></span>
-                                                                                    <span class="box"></span> Others
+                                                                                    <span class="box"></span> Bhopal Nobles Public School
                                                                                 </label>
                                                                             </div>
                                                                         </div>
@@ -1370,15 +1359,9 @@
                                                 <hr>
                                                 <div class="row">
                                                     <div class="col-md-offset-4 col-md-8">
-                                                        <div
-                                                            class="form-group form-md-line-input form-md-floating-label">
-                                                            <button type="button" class="btn green"
-                                                                    name="save_school_info" id="save_school_info"><i
-                                                                    class="fa fa-save"></i>&nbsp;&nbsp;Save School Info
-                                                            </button>
-                                                            <button type="button" id="hello" class="btn default">
-                                                                Cancel
-                                                            </button>
+                                                        <div class="form-group form-md-line-input form-md-floating-label">
+                                                            <button type="button" class="btn green" name="save_company_info" id="save_company_info"><i class="fa fa-save"></i>&nbsp;&nbsp;Save Company Info </button>
+                                                            <button type="button" id="hello" class="btn default"> Cancel </button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1433,29 +1416,7 @@
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
                 <h2>Follow Us On</h2>
-                <ul class="social-icons">
-                    <li>
-                        <a href="javascript:;" data-original-title="rss" class="rss"></a>
-                    </li>
-                    <li>
-                        <a href="javascript:;" data-original-title="facebook" class="facebook"></a>
-                    </li>
-                    <li>
-                        <a href="javascript:;" data-original-title="twitter" class="twitter"></a>
-                    </li>
-                    <li>
-                        <a href="javascript:;" data-original-title="googleplus" class="googleplus"></a>
-                    </li>
-                    <li>
-                        <a href="javascript:;" data-original-title="linkedin" class="linkedin"></a>
-                    </li>
-                    <li>
-                        <a href="javascript:;" data-original-title="youtube" class="youtube"></a>
-                    </li>
-                    <li>
-                        <a href="javascript:;" data-original-title="vimeo" class="vimeo"></a>
-                    </li>
-                </ul>
+
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
                 <h2>Contacts</h2>
@@ -1587,11 +1548,11 @@ echo script_tag('assets/js/layout3/demo.min.js');
 echo script_tag('assets/js/bootstrap/bootstrap-growl.min.js');
 echo script_tag('assets/js/bootstrap/sweet-alert.min.js');
 //    echo script_tag('assets/js/global/scripts/quick-sidebar.min.js');
-echo script_tag('assets/js/app-js/manage/manage-school/manage-school.js');
+echo script_tag('assets/js/app-js/manage/manage-company/manage-company.js');
 ?>
 </html>
 <script type="text/javascript">
     $(document).ready(function () {
-        new WKISCHOOL.ManageSchool("<?php echo base_url(); ?>");
+        new WKISCHOOL.ManageCompany("<?php echo base_url(); ?>");
     });
 </script>

@@ -56,6 +56,11 @@ $route['manage-admin-account'] = "Manage_admin_controller";
 $route['manage-subject-class'] = "Manage_sub_class_controller";
 $route['manage-codes'] = "Codes_manage_controller";
 $route['manage-csc'] = "CSC_manage_controller";
+$route['manage-company'] = "Company_manage_controller";
+$route['manage-receipts'] = "Receipt_manage_controller";
+$route['manage-masters'] = "PPM_manage_controller";
+$route['manage-accounts'] = "PPM_manage_controller";
+$route['manage-fee'] = "Fee_manage_controller";
 
 $route['admin-mng-book-mng'] = "Admin_controller";
 $route['admin_mng/([0-9]+)'] = "admin_mng/index/$1";

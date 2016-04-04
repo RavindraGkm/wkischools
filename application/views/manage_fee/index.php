@@ -1,10 +1,5 @@
 <!DOCTYPE html>
-
-<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
-<!--[if !IE]><!-->
 <html lang="en">
-
     <head>
         <meta charset="utf-8" />
         <title>Metronic | Dashboard</title>
@@ -12,7 +7,6 @@
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="" name="description" />
         <meta content="" name="author" />
-
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
         <?php
             echo link_tag('assets/css/font-awesome/css/font-awesome.min.css');
@@ -30,6 +24,8 @@
             echo link_tag('assets/css/layout3/layout.min.css');
             echo link_tag('assets/css/layout3/themes/default.min.css');
             echo link_tag('assets/css/layout3/custom.min.css');
+            echo link_tag('assets/css/sweet-alert.css');
+
         ?>
         <!-- END THEME LAYOUT STYLES -->
         <link rel="shortcut icon" href="favicon.ico" /> </head>
@@ -43,13 +39,13 @@
                 <div class="container">
                     <!-- BEGIN LOGO -->
                     <div class="page-logo">
-                        <a href="<?php echo base_url();?>">
+                        <a href="<?php echo base_url('');?>">
                             <img src="<?php echo base_url('assets/img/layouts3/logo-default.jpg'); ?>" alt="logo" class="logo-default">
                         </a>
                     </div>
                     <!-- END LOGO -->
                     <!-- BEGIN RESPONSIVE MENU TOGGLER -->
-                    <a href="javascript:;" class="menu-toggler"></a>
+<!--                    <a href="javascript:;" class="menu-toggler"></a>-->
                     <!-- END RESPONSIVE MENU TOGGLER -->
                     <!-- BEGIN TOP NAVIGATION MENU -->
                     <div class="top-menu">
@@ -443,13 +439,13 @@
                                                 class="arrow"></span> </a>
                                         <ul class="dropdown-menu">
                                             <li class="">
-                                                <a href="<?php echo base_url('manage-master?page=prospectus_form_master');?>" class="nav-link"> Prospectus/Form Master</a>
+                                                <a href="<?php echo base_url('manage-masters?page=prospectus_form_master');?>" class="nav-link"> Prospectus/Form Master</a>
                                             </li>
                                             <li class="">
-                                                <a href="<?php echo base_url('manage-master?page=provisional_fee_master');?>" class="nav-link"> Provisional/Fee Master</a>
+                                                <a href="<?php echo base_url('manage-masters?page=provisional_fee_master');?>" class="nav-link"> Provisional/Fee Master</a>
                                             </li>
                                             <li class=" ">
-                                                <a href="<?php echo base_url('manage-master?page=media_master');?>" class="nav-link"> Media Master</a>
+                                                <a href="<?php echo base_url('manage-masters?page=media_master');?>" class="nav-link"> Media Master</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -480,19 +476,19 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="menu-dropdown classic-menu-dropdown">
+                            <li class="menu-dropdown classic-menu-dropdown active">
                                 <a href="javascript:;"> Fee
                                     <span class="arrow"></span>
                                 </a>
                                 <ul class="dropdown-menu pull-left manage-menu-size">
                                     <li class="dropdown-submenu active">
-                                        <a href="javascript:;" class="nav-link nav-toggle ">
+                                        <a href="<?php echo base_url('manage-fee?page=manage_fee_head');?>" class="nav-link nav-toggle ">
                                             Manage Fee
                                             <span class="arrow"></span>
                                         </a>
                                         <ul class="dropdown-menu manage-menu-size">
                                             <li class="">
-                                                <a href="" class="nav-link"> Manage Fee Head</a>
+                                                <a href="<?php echo base_url('manage-fee?page=manage-fee-head');?>" class="nav-link"> Manage Fee Head</a>
                                             </li>
                                             <li class="">
                                                 <a href="" class="nav-link"> Manage Fee Installment</a>
@@ -804,7 +800,7 @@
                                                             <a href="ui_buttons.html"> Manage Grade </a>
                                                         </li>
                                                         <li>
-                                                            <a href="ui_confirmations.html"> Manage Employee Class Relation </a>
+                                                            <a href="ui_confirmations.html"> Manage Employee Class Relation  </a>
                                                         </li>
                                                         <li>
                                                             <a href="ui_icons.html"> Exam Pattern Academic Grade Relation </a>
@@ -838,8 +834,7 @@
                                                             <a href="ui_page_progress_style_1.html"> Manage Student Backs </a>
                                                         </li>
                                                         <li>
-                                                            <a href="ui_page_progress_style_2.html"> Student Exam Remarks
-                                                                Relation </a>
+                                                            <a href="ui_page_progress_style_2.html"> Student Exam Remarks Relation </a>
                                                         </li>
                                                         <li>
                                                             <a href="ui_blockui.html"> Student Direct Attendance </a>
@@ -897,7 +892,7 @@
                                                             <a href="ui_buttons.html"> Employee Department Relation </a>
                                                         </li>
                                                         <li>
-                                                            <a href="ui_confirmations.html"> Dynamic Employee Report </a>
+                                                            <a href="ui_confirmations.html"> Dynamic Employee Report  </a>
                                                         </li>
                                                         <li>
                                                             <a href="ui_icons.html"> Employee Report </a>
@@ -931,8 +926,7 @@
                                                             <a href="ui_page_progress_style_1.html"> Manage Student Backs </a>
                                                         </li>
                                                         <li>
-                                                            <a href="ui_page_progress_style_2.html"> Student Exam Remarks
-                                                                Relation </a>
+                                                            <a href="ui_page_progress_style_2.html"> Student Exam Remarks Relation </a>
                                                         </li>
                                                         <li>
                                                             <a href="ui_blockui.html"> Student Direct Attendance </a>
@@ -1105,8 +1099,7 @@
                                         <a href="layout_mega_menu_fixed.html" class="nav-link  "> Issue/Sale Items </a>
                                     </li>
                                     <li class=" ">
-                                        <a href="layout_mega_menu_fixed.html" class="nav-link  "> Store Requisition
-                                            Approval </a>
+                                        <a href="layout_mega_menu_fixed.html" class="nav-link  "> Store Requisition Approval </a>
                                     </li>
                                     <li class=" ">
                                         <a href="layout_mega_menu_fixed.html" class="nav-link  "> Store Write Off/Lost </a>
@@ -1145,271 +1138,268 @@
             </div>
             <!-- END HEADER MENU -->
         </div>
-        <!-- END HEADER -->
-        <!-- BEGIN CONTAINER -->
         <div class="page-container">
-            <!-- BEGIN CONTENT -->
             <div class="page-content-wrapper">
-                <!-- BEGIN CONTENT BODY -->
-                <!-- BEGIN PAGE HEAD-->
                 <div class="page-head">
                     <div class="container">
-                        <!-- BEGIN PAGE TITLE -->
                         <div class="page-title">
-                            <h1>Dashboard
-                                <small>dashboard & statistics</small>
+                            <h1>Manage Fee Head
+                                <small>manage fee head</small>
                             </h1>
                         </div>
-                        <!-- END PAGE TITLE -->
-                        <!-- BEGIN PAGE TOOLBAR -->
-                        <div class="page-toolbar">
-                            <!-- BEGIN THEME PANEL -->
-
-                            <!-- END THEME PANEL -->
-                        </div>
-                        <!-- END PAGE TOOLBAR -->
                     </div>
                 </div>
-                <!-- END PAGE HEAD-->
-                <!-- BEGIN PAGE CONTENT BODY -->
                 <div class="page-content">
                     <div class="container">
-                        <!-- BEGIN PAGE BREADCRUMBS -->
                         <ul class="page-breadcrumb breadcrumb">
                             <li>
-                                <a href="index.html">Home</a>
+                                <a href="<?php echo base_url();?>">Manage</a>
                                 <i class="fa fa-circle"></i>
                             </li>
                             <li>
-                                <span>Dashboard</span>
+                                <span>Manage Fee Head</span>
                             </li>
                         </ul>
-                        <!-- END PAGE BREADCRUMBS -->
-                        <!-- BEGIN PAGE CONTENT INNER -->
                         <div class="page-content-inner">
                             <div class="row">
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="portlet light ">
+                                <div class="col-md-12">
+                                    <div class="portlet box green">
                                         <div class="portlet-title">
-                                            <div class="caption caption-md">
-                                                <i class="icon-bar-chart font-red"></i>
-                                                <span class="caption-subject font-red bold uppercase">Member Activity</span>
-                                                <span class="caption-helper">weekly stats...</span>
-                                            </div>
-                                            <div class="actions">
-                                                <div class="btn-group btn-group-devided" data-toggle="buttons">
-                                                    <label class="btn btn-transparent green btn-outline btn-circle btn-sm active">
-                                                        <input type="radio" name="options" class="toggle" id="option1">Today</label>
-                                                    <label class="btn btn-transparent green btn-outline btn-circle btn-sm">
-                                                        <input type="radio" name="options" class="toggle" id="option2">Week</label>
-                                                    <label class="btn btn-transparent green btn-outline btn-circle btn-sm">
-                                                        <input type="radio" name="options" class="toggle" id="option2">Month</label>
-                                                </div>
+                                            <div class="caption">
+                                                <i class="fa fa-cogs"></i><span id="header_title">Manage Fee Head</span>
                                             </div>
                                         </div>
                                         <div class="portlet-body">
-                                            <div class="row number-stats margin-bottom-30">
-                                                <div class="col-md-6 col-sm-6 col-xs-6">
-                                                    <div class="stat-left">
-                                                        <div class="stat-chart">
-                                                            <!-- do not line break "sparkline_bar" div. sparkline chart has an issue when the container div has line break -->
-                                                            <div id="sparkline_bar"></div>
+                                            <div class="tabbable-line">
+                                                <input type="hidden" value="<?php echo $active_tab; ?>" id="active_tab_val"/>
+                                                <ul class="nav nav-tabs ">
+                                                    <li id="tab_manage_fee_head">
+                                                        <a href="#manage_fee_head" class="tab_val_header_fee_head" data-toggle="tab"><i class="fa fa-building"></i> Manage Fee Head </a>
+                                                    </li>
+                                                    <li id="tab_mng_subject">
+                                                        <a href="#mng_subject" class="tab_val_header_sub" data-toggle="tab"><i class="fa fa-building"></i> Manage Subject </a>
+                                                    </li>
+                                                    <li id="tab_mng_sub_class_rel">
+                                                        <a href="#mng_sub_class_rel" class="tab_val_header_sub_rel" data-toggle="tab"><i class="fa fa-building"></i> Manage Subject Class Relation</a>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="tab-content">
+                                                    <div class="tab-pane" id="manage_fee_head">
+                                                        <div class="row">
+                                                            <div class="col-md-offset-1 col-md-10">
+                                                                <h4><i class="fa fa-plus"></i>&nbsp;&nbsp;Create New Fee Head</h4>
+                                                            </div>
                                                         </div>
-                                                        <div class="stat-number">
-                                                            <div class="title"> Total </div>
-                                                            <div class="number"> 2460 </div>
+                                                        <hr>
+                                                        <div class="row">
+                                                            <form role="form">
+                                                                <div class="section-school-info">
+                                                                    <div class="form-body">
+                                                                        <div class="col-md-offset-1 col-md-3">
+                                                                            <div class="form-group form-md-line-input form-md-floating-label">
+                                                                                <select class="form-control" name="drop_company_name" id="drop_company_name">
+                                                                                    <option value=""></option>
+                                                                                    <option value="">----Select----</option>
+                                                                                </select>
+                                                                                <label for="drop_company_name">Company Name</label>
+                                                                            </div>
+                                                                            <div class="form-group form-md-line-input form-md-floating-label">
+                                                                                <input type="text" class="form-control" name="fee_head_name" id="fee_head_name" value="">
+                                                                                <label for="fee_head_name">Fee Head Name</label>
+                                                                            </div>
+                                                                            <div class="form-group form-md-line-input form-md-floating-label">
+                                                                                <input type="text" class="form-control" name="fee_code" id="fee_code" value="">
+                                                                                <label for="fee_code">Fee Code</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <div class="form-group form-md-line-input form-md-floating-label">
+                                                                                <select class="form-control" name="drop_fee_head_for" id="drop_fee_head_for">
+                                                                                    <option value=""></option>
+                                                                                    <option value="">----Select----</option>
+                                                                                    <option value="General Fees">General Fees</option>
+                                                                                    <option value="Hostel Fees">Hostel Fees</option>
+                                                                                    <option value="Conveyance Fees">Conveyance Fees</option>
+                                                                                    <option value="Miscellaneous Fees">Miscellaneous Fees</option>
+                                                                                </select>
+                                                                                <label for="drop_fee_head_for">Fee Head For</label>
+                                                                            </div>
+                                                                            <div class="form-group form-md-line-input form-md-floating-label">
+                                                                                <input type="text" class="form-control" name="fee_group_name" id="fee_group_name" value="">
+                                                                                <label for="fee_group_name">Fee Group Name</label>
+                                                                            </div>
+                                                                            <div class="form-group form-md-radios">
+                                                                                <label>Income</label>
+                                                                                <div class="md-radio-inline">
+                                                                                    <div class="md-radio">
+                                                                                        <input type="radio" id="radio_income_yes" name="radioIncome" class="md-radiobtn rdb_fee_income" value="Yes" checked>
+                                                                                        <label for="radio_income_yes">
+                                                                                            <span></span>
+                                                                                            <span class="check"></span>
+                                                                                            <span class="box"></span> Yes </label>
+                                                                                    </div>
+                                                                                    <div class="md-radio">
+                                                                                        <input type="radio" id="radio_income_no" name="radioIncome" value="No" class="md-radiobtn rdb_fee_income">
+                                                                                        <label for="radio_income_no">
+                                                                                            <span></span>
+                                                                                            <span class="check"></span>
+                                                                                            <span class="box"></span> No </label>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div id="section-id-card-header">
+                                                                    <div class="col-md-12">
+
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="row">
+                                                            <div class="col-md-offset-2 col-md-8">
+                                                                <div class="form-group form-md-line-input form-md-floating-label">
+                                                                    <button type="button" class="btn green" name="save_fee_head_info" id="save_fee_head_info"><i class="fa fa-save"></i>&nbsp;&nbsp;Save Fee Head Info</button>
+                                                                    <button type="button" id="hello" class="btn default">Cancel</button>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-md-6 col-sm-6 col-xs-6">
-                                                    <div class="stat-right">
-                                                        <div class="stat-chart">
-                                                            <!-- do not line break "sparkline_bar" div. sparkline chart has an issue when the container div has line break -->
-                                                            <div id="sparkline_bar2"></div>
+                                                    <div class="tab-pane" id="mng_subject">
+                                                        <div class="row">
+                                                            <div class="col-md-offset-1 col-md-10">
+                                                                <h4><i class="fa fa-plus"></i>&nbsp;&nbsp;Create Subject</h4>
+                                                            </div>
                                                         </div>
-                                                        <div class="stat-number">
-                                                            <div class="title"> New </div>
-                                                            <div class="number"> 719 </div>
+                                                        <hr>
+                                                        <div class="row">
+                                                            <form role="form">
+                                                                <div class="section-school-info">
+                                                                    <div class="form-body">
+                                                                        <div class="col-md-offset-1 col-md-3">
+                                                                            <div class="form-group form-md-line-input form-md-floating-label">
+                                                                                <input type="text" class="form-control" name="subject_code" id="subject_code" value="">
+                                                                                <label for="subject_code">Subject Code *</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <div class="form-group form-md-line-input form-md-floating-label">
+                                                                                <input type="text" class="form-control" name="subject_name" id="subject_name" value="">
+                                                                                <label for="subject_name">Subject Name *</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-4">
+                                                                            <div class="form-group form-md-radios">
+                                                                                <label>Subject Type</label>
+                                                                                <div class="md-radio-inline">
+                                                                                    <div class="md-radio">
+                                                                                        <input type="radio" id="radio6" name="radio2" class="md-radiobtn rdb_school_type" value="Class" checked>
+                                                                                        <label for="radio6">
+                                                                                            <span></span>
+                                                                                            <span class="check"></span>
+                                                                                            <span class="box"></span> Class </label>
+                                                                                    </div>
+                                                                                    <div class="md-radio">
+                                                                                        <input type="radio" id="radio7" name="radio2" value="Lab" class="md-radiobtn rdb_school_type">
+                                                                                        <label for="radio7">
+                                                                                            <span></span>
+                                                                                            <span class="check"></span>
+                                                                                            <span class="box"></span> Lab </label>
+                                                                                    </div>
+                                                                                    <div class="md-radio">
+                                                                                        <input type="radio" id="radio8" name="radio2" value="Tutorial" class="md-radiobtn rdb_school_type">
+                                                                                        <label for="radio8">
+                                                                                            <span></span>
+                                                                                            <span class="check"></span>
+                                                                                            <span class="box"></span> Tutorial </label>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="row">
+                                                            <div class="col-md-offset-4 col-md-8">
+                                                                <div class="form-group form-md-line-input form-md-floating-label">
+                                                                    <button type="button" class="btn green" name="save_subject_info" id="save_subject_info"><i class="fa fa-save"></i>&nbsp;&nbsp;Save Subject Info</button>
+                                                                    <button type="button" id="hello" class="btn default">Cancel</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane" id="mng_sub_class_rel">
+                                                        <div class="row">
+                                                            <div class="col-md-offset-1 col-md-10">
+                                                                <h4><i class="fa fa-plus"></i>&nbsp;&nbsp;Create Subject</h4>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="row">
+                                                            <form role="form">
+                                                                <div class="section-school-info">
+                                                                    <div class="form-body">
+                                                                        <div class="col-md-offset-1 col-md-2">
+                                                                            <div class="form-group form-md-line-input form-md-floating-label">
+                                                                                <input type="text" class="form-control" name="drop_val" id="drop_val" value="">
+                                                                                <label for="drop_val">Drop Value</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <div class="form-group form-md-line-input form-md-floating-label">
+                                                                                <select class="form-control" name="drop_down_add" id="drop_down_add">
+                                                                                    <option value=""></option>
+                                                                                    <option value="">----Select----</option>
+                                                                                    <option value="PRE PRIMARY">PRE PRIMARY</option>
+                                                                                    <option value="PRIMARY">PRIMARY</option>
+                                                                                    <option value="MIDDLE">MIDDLE</option>
+                                                                                    <option value="SECONDARY">SECONDARY</option>
+                                                                                    <option value="SR. SECONDARY">SR. SECONDARY</option>
+                                                                                </select>
+                                                                                <label for="drop_down_add">Class Segment</label>
+                                                                            </div>
+                                                                            <table>
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th>DropDown</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody id="table_drop_down_add"></tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div id="section-id-card-header">
+                                                                    <div class="col-md-12">
+
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="row">
+                                                            <div class="col-md-offset-2 col-md-8">
+                                                                <div class="form-group form-md-line-input form-md-floating-label">
+                                                                    <button type="button" class="btn green" name="add_option" id="add_option"><i class="fa fa-save"></i>&nbsp;&nbsp;Add Option</button>
+                                                                    <button type="button" id="hello" class="btn default">Cancel</button>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="table-scrollable table-scrollable-borderless">
-                                                <table class="table table-hover table-light">
-                                                    <thead>
-                                                        <tr class="uppercase">
-                                                            <th colspan="2"> MEMBER </th>
-                                                            <th> Earnings </th>
-                                                            <th> CASES </th>
-                                                            <th> CLOSED </th>
-                                                            <th> RATE </th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tr>
-                                                        <td class="fit">
-                                                            <img class="user-pic rounded" src="<?php echo base_url('assets/img/layouts3/avatar4.jpg');?>"> </td>
-                                                        <td>
-                                                            <a href="javascript:;" class="primary-link">Brain</a>
-                                                        </td>
-                                                        <td> $345 </td>
-                                                        <td> 45 </td>
-                                                        <td> 124 </td>
-                                                        <td>
-                                                            <span class="bold theme-font">80%</span>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="fit">
-                                                            <img class="user-pic rounded" src="<?php echo base_url('assets/img/layouts3/avatar5.jpg');?>""> </td>
-                                                        <td>
-                                                            <a href="javascript:;" class="primary-link">Nick</a>
-                                                        </td>
-                                                        <td> $560 </td>
-                                                        <td> 12 </td>
-                                                        <td> 24 </td>
-                                                        <td>
-                                                            <span class="bold theme-font">67%</span>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="fit">
-                                                            <img class="user-pic rounded" src="<?php echo base_url('assets/img/layouts3/avatar6.jpg');?>""> </td>
-                                                        <td>
-                                                            <a href="javascript:;" class="primary-link">Tim</a>
-                                                        </td>
-                                                        <td> $1,345 </td>
-                                                        <td> 450 </td>
-                                                        <td> 46 </td>
-                                                        <td>
-                                                            <span class="bold theme-font">98%</span>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="fit">
-                                                            <img class="user-pic rounded" src="<?php echo base_url('assets/img/layouts3/avatar7.jpg');?>""> </td>
-                                                        <td>
-                                                            <a href="javascript:;" class="primary-link">Tom</a>
-                                                        </td>
-                                                        <td> $645 </td>
-                                                        <td> 50 </td>
-                                                        <td> 89 </td>
-                                                        <td>
-                                                            <span class="bold theme-font">58%</span>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </div>
+                                        
                                         </div>
                                     </div>
+
                                 </div>
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="portlet light ">
-                                        <div class="portlet-title">
-                                            <div class="caption caption-md">
-                                                <i class="icon-bar-chart font-green"></i>
-                                                <span class="caption-subject font-green bold uppercase">Customer Support</span>
-                                                <span class="caption-helper">45 pending</span>
-                                            </div>
-                                            <div class="inputs">
-                                                <div class="portlet-input input-inline input-small ">
-                                                    <div class="input-icon right">
-                                                        <i class="icon-magnifier"></i>
-                                                        <input type="text" class="form-control form-control-solid input-circle" placeholder="search..."> </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="portlet-body">
-                                            <div class="scroller" style="height: 338px;" data-always-visible="1" data-rail-visible1="0" data-handle-color="#D7DCE2">
-                                                <div class="general-item-list">
-                                                    <div class="item">
-                                                        <div class="item-head">
-                                                            <div class="item-details">
-                                                                <img class="item-pic rounded" src="<?php echo base_url('assets/img/layouts3/avatar4.jpg');?>"">
-                                                                <a href="" class="item-name primary-link">Nick Larson</a>
-                                                                <span class="item-label">3 hrs ago</span>
-                                                            </div>
-                                                            <span class="item-status">
-                                                                <span class="badge badge-empty badge-success"></span> Open</span>
-                                                        </div>
-                                                        <div class="item-body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </div>
-                                                    </div>
-                                                    <div class="item">
-                                                        <div class="item-head">
-                                                            <div class="item-details">
-                                                                <img class="item-pic rounded" src="<?php echo base_url('assets/img/layouts3/avatar3.jpg');?>"">
-                                                                <a href="" class="item-name primary-link">Mark</a>
-                                                                <span class="item-label">5 hrs ago</span>
-                                                            </div>
-                                                            <span class="item-status">
-                                                                <span class="badge badge-empty badge-warning"></span> Pending</span>
-                                                        </div>
-                                                        <div class="item-body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat tincidunt ut laoreet. </div>
-                                                    </div>
-                                                    <div class="item">
-                                                        <div class="item-head">
-                                                            <div class="item-details">
-                                                                <img class="item-pic rounded" src="<?php echo base_url('assets/img/layouts3/avatar6.jpg');?>"">
-                                                                <a href="" class="item-name primary-link">Nick Larson</a>
-                                                                <span class="item-label">8 hrs ago</span>
-                                                            </div>
-                                                            <span class="item-status">
-                                                                <span class="badge badge-empty badge-primary"></span> Closed</span>
-                                                        </div>
-                                                        <div class="item-body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. </div>
-                                                    </div>
-                                                    <div class="item">
-                                                        <div class="item-head">
-                                                            <div class="item-details">
-                                                                <img class="item-pic rounded" src="<?php echo base_url('assets/img/layouts3/avatar7.jpg');?>"">
-                                                                <a href="" class="item-name primary-link">Nick Larson</a>
-                                                                <span class="item-label">12 hrs ago</span>
-                                                            </div>
-                                                            <span class="item-status">
-                                                                <span class="badge badge-empty badge-danger"></span> Pending</span>
-                                                        </div>
-                                                        <div class="item-body"> Consectetuer adipiscing elit Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </div>
-                                                    </div>
-                                                    <div class="item">
-                                                        <div class="item-head">
-                                                            <div class="item-details">
-                                                                <img class="item-pic rounded" src="<?php echo base_url('assets/img/layouts3/avatar9.jpg');?>"">
-                                                                <a href="" class="item-name primary-link">Richard Stone</a>
-                                                                <span class="item-label">2 days ago</span>
-                                                            </div>
-                                                            <span class="item-status">
-                                                                <span class="badge badge-empty badge-danger"></span> Open</span>
-                                                        </div>
-                                                        <div class="item-body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, ut laoreet dolore magna aliquam erat volutpat. </div>
-                                                    </div>
-                                                    <div class="item">
-                                                        <div class="item-head">
-                                                            <div class="item-details">
-                                                                <img class="item-pic rounded" src="<?php echo base_url('assets/img/layouts3/avatar8.jpg');?>"">
-                                                                <a href="" class="item-name primary-link">Dan</a>
-                                                                <span class="item-label">3 days ago</span>
-                                                            </div>
-                                                            <span class="item-status">
-                                                                <span class="badge badge-empty badge-warning"></span> Pending</span>
-                                                        </div>
-                                                        <div class="item-body"> Lorem ipsum dolor sit amet, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </div>
-                                                    </div>
-                                                    <div class="item">
-                                                        <div class="item-head">
-                                                            <div class="item-details">
-                                                                <img class="item-pic rounded" src="<?php echo base_url('assets/img/layouts3/avatar2.jpg');?>"">
-                                                                <a href="" class="item-name primary-link">Larry</a>
-                                                                <span class="item-label">4 hrs ago</span>
-                                                            </div>
-                                                            <span class="item-status">
-                                                                <span class="badge badge-empty badge-success"></span> Open</span>
-                                                        </div>
-                                                        <div class="item-body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                         <!-- END PAGE CONTENT INNER -->
@@ -1450,29 +1440,6 @@
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
                         <h2>Follow Us On</h2>
-                        <ul class="social-icons">
-                            <li>
-                                <a href="javascript:;" data-original-title="rss" class="rss"></a>
-                            </li>
-                            <li>
-                                <a href="javascript:;" data-original-title="facebook" class="facebook"></a>
-                            </li>
-                            <li>
-                                <a href="javascript:;" data-original-title="twitter" class="twitter"></a>
-                            </li>
-                            <li>
-                                <a href="javascript:;" data-original-title="googleplus" class="googleplus"></a>
-                            </li>
-                            <li>
-                                <a href="javascript:;" data-original-title="linkedin" class="linkedin"></a>
-                            </li>
-                            <li>
-                                <a href="javascript:;" data-original-title="youtube" class="youtube"></a>
-                            </li>
-                            <li>
-                                <a href="javascript:;" data-original-title="vimeo" class="vimeo"></a>
-                            </li>
-                        </ul>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
                         <h2>Contacts</h2>
@@ -1586,7 +1553,6 @@
     echo script_tag('assets/js/uniform/jquery.uniform.min.js');
     echo script_tag('assets/js/bootstrap-switch/bootstrap-switch.min.js');
     echo script_tag('assets/js/plugins/moment.min.js');
-    echo script_tag('assets/js/bootstrap-daterangepicker/daterangepicker.min.js');
     echo script_tag('assets/js/morris/morris.min.js');
     echo script_tag('assets/js/morris/raphael-min.js');
     echo script_tag('assets/js/plugins/counterup/jquery.waypoints.min.js');
@@ -1595,23 +1561,18 @@
     echo script_tag('assets/js/plugins/flot/jquery.flot.min.js');
     echo script_tag('assets/js/plugins/flot/jquery.flot.resize.min.js');
     echo script_tag('assets/js/plugins/flot/jquery.flot.categories.min.js');
-    echo script_tag('assets/js/plugins/jquery-easypiechart/jquery.easypiechart.min.js');
     echo script_tag('assets/js/plugins/jquery.sparkline.min.js');
-    echo script_tag('assets/js/plugins/jqvmap/jqvmap/jquery.vmap.js');
-    echo script_tag('assets/js/plugins/jqvmap/jqvmap/maps/jquery.vmap.russia.js');
-    echo script_tag('assets/js/plugins/jqvmap/jqvmap/maps/jquery.vmap.world.js');
-    echo script_tag('assets/js/plugins/jqvmap/jqvmap/maps/jquery.vmap.europe.js');
-    echo script_tag('assets/js/plugins/jqvmap/jqvmap/maps/jquery.vmap.germany.js');
-    echo script_tag('assets/js/plugins/jqvmap/jqvmap/maps/jquery.vmap.usa.js');
-    echo script_tag('assets/js/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js');
     echo script_tag('assets/js/scripts/app.min.js');
     echo script_tag('assets/js/pages/scripts/dashboard.min.js');
     echo script_tag('assets/js/layout3/layout.min.js');
     echo script_tag('assets/js/layout3/demo.min.js');
-    echo script_tag('assets/js/global/scripts/quick-sidebar.min.js');
-    echo script_tag('assets/js/app-js/index.js');
+    echo script_tag('assets/js/bootstrap/bootstrap-growl.min.js');
+    echo script_tag('assets/js/bootstrap/sweet-alert.min.js');
+    echo script_tag('assets/js/app-js/fee/manage-fee/manage-fee.js');
     ?>
 </html>
 <script type="text/javascript">
-    new WKI_SAAS.Index("<?php echo base_url(); ?>");
+    $(document).ready(function () {
+        new WKISCHOOL.ManageFee("<?php echo base_url(); ?>");
+    });
 </script>

@@ -396,55 +396,56 @@
                                         </ul>
                                     </li>
                                     <li class=" dropdown-submenu">
-                                        <a href="index.html" class="nav-link  active"> Manage Receipt </a>
+                                        <a href="<?php echo base_url('manage-receipts?page=manage_receipt');?>" class="nav-link  active"> Manage Receipt </a>
                                         <ul class="dropdown-menu">
                                             <li class=" ">
-                                                <a href="index.html" class="nav-link  active">
+                                                <a href="<?php echo base_url('manage-receipts?page=manage_receipt');?>" class="nav-link  active">
                                                     Manage Receipt Book
                                                 </a>
                                             </li>
                                             <li class="">
-                                                <a href="" class="nav-link "> Duplicate Receipt</a>
+                                                <a href="<?php echo base_url('manage-receipts?page=manage_duplicate_receipt');?>" class="nav-link "> Duplicate Receipt</a>
                                             </li>
                                             <li class="">
-                                                <a href="" class="nav-link "> Cancel Receipt</a>
+                                                <a href="<?php echo base_url('manage-receipts?page=manage_cancel_receipt');?>" class="nav-link "> Cancel Receipt</a>
                                             </li>
                                             <li class="">
-                                                <a href="" class="nav-link"> Delete Receipt</a>
+                                                <a href="<?php echo base_url('manage-receipts?page=manage_delete_receipt');?>" class="nav-link"> Delete Receipt</a>
                                             </li>
                                         </ul>
                                     </li>
                                     <li class=" ">
-                                        <a href="index.html" class="nav-link  active"> Calendar Planning </a>
+                                        <a href="<?php echo base_url('manage-calendar');?>" class="nav-link  active"> Calendar Planning </a>
                                     </li>
                                     <li class=" ">
-                                        <a href="index.html" class="nav-link  active"> Manage Company </a>
+                                        <a href="<?php echo base_url('manage-company');?>" class="nav-link  active"> Manage Company </a>
                                     </li>
                                     <li class="dropdown-submenu">
-                                        <a href="javascript:;" class="nav-link nav-toggle "> Manage Account <span class="arrow"></span> </a>
+                                        <a href="<?php echo base_url('manage-accounts?page=student_account');?>" class="nav-link nav-toggle "> Manage Account <span class="arrow"></span> </a>
                                         <ul class="dropdown-menu">
                                             <li class="">
-                                                <a href="" class="nav-link"> Student Account</a>
+                                                <a href="<?php echo base_url('manage-accounts?page=student_account');?>" class="nav-link"> Student Account</a>
                                             </li>
                                             <li class="">
-                                                <a href="" class="nav-link"> Parents Account</a>
+                                                <a href="<?php echo base_url('manage-accounts?page=parents_account');?>" class="nav-link"> Parents Account</a>
                                             </li>
                                             <li class=" ">
-                                                <a href="" class="nav-link"> Employee Account</a>
+                                                <a href="<?php echo base_url('manage-accounts?page=employee_account');?>" class="nav-link"> Employee Account</a>
                                             </li>
                                         </ul>
                                     </li>
                                     <li class="dropdown-submenu">
-                                        <a href="javascript:;" class="nav-link nav-toggle "> Manage Master <span class="arrow"></span> </a>
+                                        <a href="<?php echo base_url('manage-masters?page=prospectus_form_master');?>" class="nav-link nav-toggle "> Manage Master <span
+                                                class="arrow"></span> </a>
                                         <ul class="dropdown-menu">
                                             <li class="">
-                                                <a href="" class="nav-link"> Prospectus/From Master</a>
+                                                <a href="<?php echo base_url('manage-masters?page=prospectus_form_master');?>" class="nav-link"> Prospectus/Form Master</a>
                                             </li>
                                             <li class="">
-                                                <a href="" class="nav-link"> Provisional/Fee Master</a>
+                                                <a href="<?php echo base_url('manage-masters?page=provisional_fee_master');?>" class="nav-link"> Provisional/Fee Master</a>
                                             </li>
                                             <li class=" ">
-                                                <a href="" class="nav-link"> Media Master</a>
+                                                <a href="<?php echo base_url('manage-masters?page=media_master');?>" class="nav-link"> Media Master</a>
                                             </li>
                                         </ul>
                                     </li>
